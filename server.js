@@ -66,6 +66,7 @@ String.prototype.hashCode = function() {
     return hash;
   };
 
+const config = require('./config');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = new express();
@@ -75,7 +76,7 @@ const session = require('express-session');
 const crypto = require('crypto');
 app.use(session(
 {
-    secret: md5('thisisasecuresecret!!!1293898HHkwejk++'),
+    secret: config.secret,
     cookie: {
         secure: secure,
         maxAge: 5184000000 // 60 days
