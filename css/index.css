@@ -1,0 +1,55 @@
+.main {
+    text-align: center;
+}
+
+input.createroom {
+    min-width: 100px;
+    width: 30%;
+    min-height: 30px;
+    text-align: center;
+    margin-top: 25%;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+input#linkinput {
+    min-width: 100px;
+    width: 30%;
+    min-height: 30px;
+    text-align: center;
+    margin-top: 2%;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+video {
+    margin: 50px;
+    max-width: 300px;
+    height: auto;
+  }
+  @media screen and (min-width: 768px)  {
+    video {
+        max-width: 1024px;
+        object-fit: fill;
+    }
+  }
